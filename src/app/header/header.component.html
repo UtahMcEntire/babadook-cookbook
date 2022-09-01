@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container fluid">
+    <a class="navbar-brand" href="#">Babadook Cookbook</a>
+  
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#" (click)="onSelect('recipe')">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
+      </ul>
+    </div>
+    
+    <div class="dropdown navbar-nav">
+      <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Menu </a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Save Data</a>
+        <a href="#" class="dropdown-item">Get Data</a>
+      </div>
+    </div>
+  </div>
+</nav>
