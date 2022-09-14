@@ -1,3 +1,21 @@
 .main-recipe-image {
     max-height: 50px;
 }
+
+.list-group {
+    color: #555;
+}
+.list-group-item:hover {
+    color: #000;
+}
+
+.active {
+    color: #000;
+}
+
+.active::before {
+    content: ">";
+    position: relative;
+    left: -30px;
+    top: 40px;
+}

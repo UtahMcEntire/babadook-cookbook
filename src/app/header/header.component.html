@@ -1,20 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container fluid">
-    <a class="navbar-brand" href="#">Babadook Cookbook</a>
-  
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="#" (click)="onSelect('recipe')">Recipes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
-      </ul>
-    </div>
-    
-    <div class="dropdown navbar-nav">
-      <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Menu </a>
-      <div class="dropdown-menu">
-        <a href="#" class="dropdown-item">Save Data</a>
-        <a href="#" class="dropdown-item">Get Data</a>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <a href="/" class="navbar-brand">
+            BABADOOK<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COOK<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOK</a>
       </div>
-    </div>
+
+      <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+              <li routerLinkActive="active"><a routerLink="/recipes">Recipes</a></li>
+              <li routerLinkActive="active"><a routerLink="/shopping-list">Shopping</a></li>
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown" appDropdown>
+                  <a class="dropdown-toggle" role="button" style="cursor: pointer;">Manage <span class="caret"></span></a>
+                  
+                  <ul class="dropdown-menu">
+                      <li><a style="cursor: pointer;">Save Data</a></li>
+                      <li><a style="cursor: pointer;">Fetch Data</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
   </div>
 </nav>
