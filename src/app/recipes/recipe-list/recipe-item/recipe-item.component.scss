@@ -11,10 +11,13 @@
 
 .active {
     color: #000;
+    h4 {
+        font-weight: bold;
+    }
 }
 
 .active::before {
-    content: ">";
+    content: "";
     position: relative;
     left: -30px;
     top: 40px;
